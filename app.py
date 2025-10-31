@@ -1,4 +1,4 @@
-berfrom flask import Flask, request
+from flask import Flask, request
 import requests
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
@@ -132,4 +132,5 @@ def whatsapp_webhook():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
 
